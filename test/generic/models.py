@@ -104,7 +104,7 @@ class GuardDog(Dog):
     pass
 
 class LonelyPerson(models.Model):
-    only_friend = models.OneToOneField(Person)
+    only_friend = models.OneToOneField(Person, related_name="lonely_friend")
 
 
 class Classroom(models.Model):
